@@ -19,7 +19,7 @@ After creating the repository, GitHub will show you commands. Use these commands
 
 ```bash
 # Add the remote (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/Agrokart.git
+git remote add origin https://github.com/Developerkrushna/Agrokart.git
 
 # Rename branch to main (if needed)
 git branch -M main
@@ -31,7 +31,7 @@ git push -u origin main
 ## Alternative: Using SSH (if you have SSH keys set up)
 
 ```bash
-git remote add origin git@github.com:YOUR_USERNAME/Agrokart.git
+git remote add origin git@github.com:Developerkrushna/Agrokart.git
 git branch -M main
 git push -u origin main
 ```
