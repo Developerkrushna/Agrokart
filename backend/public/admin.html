@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Admin Panel - ShetMitra</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .stat-card h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .stat-card p {
+            opacity: 0.9;
+        }
+        
+        .collections-section {
+            margin-top: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 3px solid #43cea2;
+            padding-bottom: 10px;
+        }
+        
+        .collections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .collection-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .collection-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .collection-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #185a9d;
+            margin-bottom: 15px;
+        }
+        
+        .collection-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .collection-stat {
+            text-align: center;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .collection-stat strong {
+            display: block;
+            font-size: 1.2rem;
+            color: #43cea2;
+        }
+        
+        .collection-stat span {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2rem;
+            color: #6c757d;
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border: 1px solid #f5c6cb;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .loading {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗄️ MongoDB Admin Panel</h1>
+            <p>ShetMitra Database Management Interface</p>
+        </div>
+        
+        <div class="content">
+            <div id="loading" class="loading">
+                🔄 Loading database information...
+            </div>
+            
+            <div id="error" class="error" style="display: none;"></div>
+            
+            <div id="stats" style="display: none;">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 id="totalCollections">-</h3>
+                        <p>Collections</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="totalObjects">-</h3>
+                        <p>Total Documents</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="dataSize">-</h3>
+                        <p>Data Size</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="storageSize">-</h3>
+                        <p>Storage Size</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="collections" class="collections-section" style="display: none;">
+                <h2 class="section-title">📚 Collections</h2>
+                <div id="collectionsGrid" class="collections-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Format bytes to human readable format
+        function formatBytes(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        // Format numbers with commas
+        function formatNumber(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        // Load database stats
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/admin/stats');
+                const data = await response.json();
+                
+                if (response.ok) {
+                    // Update database stats
+                    document.getElementById('totalCollections').textContent = data.database.collections;
+                    document.getElementById('totalObjects').textContent = formatNumber(data.database.objects);
+                    document.getElementById('dataSize').textContent = formatBytes(data.database.dataSize);
+                    document.getElementById('storageSize').textContent = formatBytes(data.database.storageSize);
+                    
+                    // Show collections
+                    const collectionsGrid = document.getElementById('collectionsGrid');
+                    collectionsGrid.innerHTML = '';
+                    
+                    data.collections.forEach(collection => {
+                        const card = document.createElement('div');
+                        card.className = 'collection-card';
+                        card.innerHTML = `
+                            <div class="collection-name">${collection.name}</div>
+                            <div class="collection-stats">
+                                <div class="collection-stat">
+                                    <strong>${formatNumber(collection.count || 0)}</strong>
+                                    <span>Documents</span>
+                                </div>
+                                <div class="collection-stat">
+                                    <strong>${formatBytes(collection.size || 0)}</strong>
+                                    <span>Size</span>
+                                </div>
+                                <div class="collection-stat">
+                                    <strong>${collection.indexes || 0}</strong>
+                                    <span>Indexes</span>
+                                </div>
+                                <div class="collection-stat">
+                                    <strong>${formatBytes(collection.avgObjSize || 0)}</strong>
+                                    <span>Avg Doc Size</span>
+                                </div>
+                            </div>
+                            <button class="btn" onclick="viewCollection('${collection.name}')">
+                                📄 View Documents
+                            </button>
+                        `;
+                        collectionsGrid.appendChild(card);
+                    });
+                    
+                    // Hide loading and show content
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('stats').style.display = 'block';
+                    document.getElementById('collections').style.display = 'block';
+                } else {
+                    throw new Error(data.error || 'Failed to load stats');
+                }
+            } catch (error) {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = 'Error: ' + error.message;
+            }
+        }
+
+        // View collection documents
+        function viewCollection(collectionName) {
+            window.open(`/api/admin/collections/${collectionName}`, '_blank');
+        }
+
+        // Load stats when page loads
+        document.addEventListener('DOMContentLoaded', loadStats);
+    </script>
+</body>
+</html>

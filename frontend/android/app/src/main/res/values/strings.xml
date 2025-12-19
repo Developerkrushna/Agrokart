@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AgriNet</string>
+    <string name="title_activity_main">AgriNet</string>
+    <string name="package_name">com.agrocart.app</string>
+    <string name="custom_url_scheme">com.agrocart.app</string>
+</resources>

@@ -1,0 +1,87 @@
+{
+  "app": {
+    "name": "KrushiDoot",
+    "tagline": "Your trusted partner for quality fertilizers",
+    "welcome": "Welcome to KrushiDoot! 🌾 Your trusted partner for quality fertilizers. We're here to help your crops grow better and increase your harvest. Let's make farming easier together!"
+  },
+  "navigation": {
+    "home": "Home",
+    "myOrders": "My Orders",
+    "support": "Support",
+    "logout": "Logout",
+    "login": "Login",
+    "cart": "Cart",
+    "profile": "Profile",
+    "becomeASeller": "Become a Seller",
+    "more": "More"
+  },
+  "homepage": {
+    "heroTitle": "Quality Fertilizers for Better Harvest",
+    "heroSubtitle": "Fast delivery to your farm. Best prices guaranteed.",
+    "shopNow": "Shop Now",
+    "trustedBy": "Trusted by 10,000+ farmers across India",
+    "features": {
+      "fastDelivery": {
+        "title": "Lightning Fast Delivery",
+        "description": "Get your products delivered within 24 hours across India"
+      },
+      "certifiedQuality": {
+        "title": "Certified Quality",
+        "description": "All products are certified and tested for maximum effectiveness"
+      },
+      "seamlessShopping": {
+        "title": "Seamless Shopping",
+        "description": "Simple and secure checkout with multiple payment options"
+      }
+    }
+  },
+  "products": {
+    "urea": {
+      "name": "Urea",
+      "description": "Urea - Premium Quality Nitrogen Fertilizer 🌱\n• Promotes healthy green leafy growth\n• Increases crop yield and quality\n• Suitable for all crops - wheat, rice, cotton, vegetables\n• Easy to apply and fast-acting\n• Trusted by farmers across India"
+    },
+    "dap": {
+      "name": "DAP",
+      "description": "Di-ammonium phosphate for healthy plants"
+    },
+    "compost": {
+      "name": "Compost",
+      "description": "Organic compost for natural growth"
+    },
+    "npk": {
+      "name": "NPK",
+      "description": "Balanced nutrition for your crops"
+    },
+    "addToCart": "Add this product to cart"
+  },
+  "orders": {
+    "confirmation": "✅ Order Confirmed! Dear farmer, your fertilizer order #{{orderNumber}} has been placed successfully. Total: ₹{{amount}}. Expected delivery: 2-3 days. Track your order in KrushiDoot app. Thank you for trusting us! 🚚",
+    "onTheWay": "🚚 Great news! Your fertilizer order is on the way to your farm. Our delivery partner will reach you soon. Keep your phone handy for updates. Happy farming!",
+    "delivered": "🙏 Thank you for choosing KrushiDoot! Your fertilizer has been delivered successfully. We hope it helps your crops grow well. Rate your experience and share feedback. Wishing you a great harvest! 🌾"
+  },
+  "voice": {
+    "helpText": "🎤 Tap and speak in your language. Say crop name or fertilizer type. Example: 'I need fertilizer for tomatoes' or 'Show me urea prices'"
+  },
+  "search": {
+    "placeholder": "Search for products, brands and more"
+  },
+  "delivery": {
+    "freeDelivery": "Free delivery on orders above ₹5000",
+    "deliveryFee": "Delivery Fee: ₹{{fee}}",
+    "total": "Total: ₹{{amount}}"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close"
+  }
+}

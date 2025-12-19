@@ -1,0 +1,40 @@
+{
+  "name": "agrinet-backend",
+  "version": "1.0.0",
+  "description": "Backend for AgriNet - Premium Fertilizer Delivery App for Farmers",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "mongo-admin": "node start-mongo-admin.js",
+    "mongo-cli": "node mongo-cli-admin.js"
+  },
+  "keywords": [
+    "fertilizer",
+    "delivery",
+    "farmers",
+    "agriculture"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.18.1",
+    "firebase-admin": "^13.4.0",
+    "html2canvas": "^1.4.1",
+    "jsonwebtoken": "^9.0.0",
+    "jspdf": "^3.0.1",
+    "mongoose": "^7.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "mongo-express": "^1.1.0-rc-3",
+    "nodemon": "^3.1.10"
+  }
+}
