@@ -351,7 +351,7 @@ export class MobileServices {
         text,
         url,
         files,
-        dialogTitle: 'Share via AgriNet'
+        dialogTitle: 'Share via Agrokart'
       });
     } catch (error) {
       console.error('Share error:', error);

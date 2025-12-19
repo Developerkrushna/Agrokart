@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Data Integration Script for AgiNet
+Data Integration Script for Agrokart
 Imports scraped agricultural product data into the backend database
 """
 
@@ -17,8 +17,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 logger = logging.getLogger(__name__)
 
-class AgiNetDataIntegrator:
-    """Integrates scraped data into AgiNet database"""
+class AgrokartDataIntegrator:
+    """Integrates scraped data into Agrokart database"""
     
     def __init__(self, db_path: str = "../database.db"):
         self.db_path = db_path
@@ -342,7 +342,7 @@ def main():
     """Main function"""
     import argparse
     
-    parser = argparse.ArgumentParser(description="Integrate scraped data into AgiNet database")
+    parser = argparse.ArgumentParser(description="Integrate scraped data into Agrokart database")
     parser.add_argument("--json-file", required=True, help="JSON file with scraped products")
     parser.add_argument("--db-path", default="../database.db", help="Database file path")
     parser.add_argument("--export", action="store_true", help="Export database to JSON after integration")
@@ -353,7 +353,7 @@ def main():
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     
     try:
-        integrator = AgiNetDataIntegrator(args.db_path)
+        integrator = AgrokartDataIntegrator(args.db_path)
         
         # Show current stats
         print("📊 Current Database Stats:")

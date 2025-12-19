@@ -1,7 +1,7 @@
-# AgriNet Product API Documentation
+# Agrokart Product API Documentation
 
 ## Overview
-This document provides comprehensive information about the AgriNet product APIs for getting category data with images and prices.
+This document provides comprehensive information about the Agrokart product APIs for getting category data with images and prices.
 
 ## Base URL
 - **Web**: `http://localhost:5000/api`
@@ -38,7 +38,7 @@ GET /products?category=urea&page=1&limit=20&sortBy=price&sortOrder=asc&minPrice=
       "name": "Premium Urea",
       "description": "High-quality nitrogen fertilizer",
       "category": "urea",
-      "brand": "AgriNet",
+      "brand": "Agrokart",
       "price": 850,
       "originalPrice": 950,
       "stock": 100,
@@ -132,7 +132,7 @@ GET /products/:id
   "name": "Premium Urea",
   "description": "Detailed description...",
   "category": "urea",
-  "brand": "AgriNet",
+  "brand": "Agrokart",
   "price": 850,
   "stock": 100,
   "unit": "kg",

@@ -82,7 +82,7 @@ import {
 } from '@mui/icons-material';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import AgriNetLoader from '../components/AgriNetLoader';
+import AgrokartLoader from '../components/AgrokartLoader';
 
 const DeliveryDashboard = () => {
   const { user, logout } = useAuth();
@@ -420,7 +420,7 @@ const DeliveryDashboard = () => {
 
   // Show loading screen on initial load
   if (pageLoading) {
-    return <AgriNetLoader message="Loading Delivery Dashboard..." variant="full" />;
+    return <AgrokartLoader message="Loading Delivery Dashboard..." variant="full" />;
   }
 
   return (

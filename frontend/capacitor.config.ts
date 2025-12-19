@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.agrokart.app',
-  appName: 'AgriNet',
+  appName: 'Agrokart',
   webDir: 'build',
   server: {
     androidScheme: 'https'

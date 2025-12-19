@@ -1,7 +1,7 @@
 {
-  "name": "agrinet-backend",
+  "name": "agrokart-backend",
   "version": "1.0.0",
-  "description": "Backend for AgriNet - Premium Fertilizer Delivery App for Farmers",
+  "description": "Backend for Agrokart - Premium Fertilizer Delivery App for Farmers",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

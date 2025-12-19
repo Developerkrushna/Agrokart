@@ -1,5 +1,5 @@
 /**
- * Image Service for AgriNet
+ * Image Service for Agrokart
  * Handles image optimization, compression, and CDN delivery
  */
 

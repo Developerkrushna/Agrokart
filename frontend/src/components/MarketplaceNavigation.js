@@ -102,7 +102,7 @@ const MarketplaceNavigation = () => {
       {/* Header */}
       <Box sx={{ textAlign: 'center', mb: 6 }}>
         <Typography variant="h3" component="h1" fontWeight="bold" gutterBottom>
-          AgriNet Marketplace
+          Agrokart Marketplace
         </Typography>
         <Typography variant="h6" color="text.secondary" paragraph>
           A complete three-sided marketplace connecting farmers, vendors, and delivery partners
@@ -276,7 +276,7 @@ const MarketplaceNavigation = () => {
       {!isUserLoggedIn() && (
         <Box sx={{ textAlign: 'center', mt: 6 }}>
           <Typography variant="h5" fontWeight="bold" gutterBottom>
-            Ready to Join AgriNet?
+            Ready to Join Agrokart?
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             Choose your role and start your journey with India's leading agricultural marketplace

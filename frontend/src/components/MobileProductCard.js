@@ -78,7 +78,7 @@ const MobileProductCard = ({
       await vibrate('light');
       await shareContent({
         title: product.name,
-        text: `Check out ${product.name} on AgriNet!`,
+        text: `Check out ${product.name} on Agrokart!`,
         url: window.location.href
       });
     } catch (error) {

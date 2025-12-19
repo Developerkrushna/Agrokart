@@ -1,10 +1,10 @@
-# 🌾 AgriNet - Complete Three-Sided Agricultural Marketplace
+# 🌾 Agrokart - Complete Three-Sided Agricultural Marketplace
 
 A comprehensive mobile-first marketplace connecting farmers, vendors, and delivery partners in the agricultural ecosystem.
 
 ## 🚀 Overview
 
-AgriNet is a complete three-sided marketplace that revolutionizes agricultural commerce by connecting:
+Agrokart is a complete three-sided marketplace that revolutionizes agricultural commerce by connecting:
 - **Customers/Farmers** - Browse and purchase agricultural products
 - **Vendors/Suppliers** - Sell fertilizers, seeds, and farming equipment
 - **Delivery Partners** - Earn by delivering orders to farmers

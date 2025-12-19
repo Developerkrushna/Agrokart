@@ -1,5 +1,5 @@
 /**
- * Products Service for AgriNet
+ * Products Service for Agrokart
  * Manages agricultural product data, categories, and inventory
  */
 

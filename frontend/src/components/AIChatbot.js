@@ -35,7 +35,7 @@ import { useLanguage } from '../context/LanguageContext';
 // Predefined responses in multiple languages
 const chatResponses = {
   en: {
-    greeting: "🌾 Hello! I'm AgriNet AI Assistant. How can I help you with fertilizers today?",
+    greeting: "🌾 Hello! I'm Agrokart AI Assistant. How can I help you with fertilizers today?",
     quickReplies: ["Product Info", "Delivery", "Pricing", "Expert Advice"],
     responses: {
       "product info": "🌱 We offer premium fertilizers:\n• Urea (₹850) - High nitrogen for leafy growth\n• DAP (₹1200) - Phosphorus for root development\n• NPK 20:20:20 (₹1100) - Balanced nutrition\n• Organic Compost (₹450) - Natural soil enrichment\n• Potash (₹950) - Potassium for fruit quality\n• Zinc Sulphate (₹180) - Micronutrient supplement\n\nAll products are certified and tested for maximum crop yield! 🚜",
@@ -47,7 +47,7 @@ const chatResponses = {
     }
   },
   hi: {
-    greeting: "🌾 नमस्ते! मैं AgriNet AI सहायक हूं। आज मैं उर्वरकों के बारे में आपकी कैसे मदद कर सकता हूं?",
+    greeting: "🌾 नमस्ते! मैं Agrokart AI सहायक हूं। आज मैं उर्वरकों के बारे में आपकी कैसे मदद कर सकता हूं?",
     quickReplies: ["उत्पाद जानकारी", "डिलीवरी", "कीमत", "विशेषज्ञ सलाह"],
     responses: {
       "उत्पाद जानकारी": "🌱 हमारे प्रीमियम उर्वरक:\n• यूरिया (₹850) - पत्तियों की वृद्धि के लिए नाइट्रोजन\n• डीएपी (₹1200) - जड़ों के विकास के लिए फास्फोरस\n• एनपीके 20:20:20 (₹1100) - संतुलित पोषण\n• जैविक खाद (₹450) - प्राकृतिक मिट्टी संवर्धन\n• पोटाश (₹950) - फलों की गुणवत्ता के लिए\n• जिंक सल्फेट (₹180) - सूक्ष्म पोषक तत्व\n\nसभी उत्पाद प्रमाणित और परीक्षित हैं! 🚜",

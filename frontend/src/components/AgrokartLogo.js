@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 
-const AgriNetLogo = ({ 
+const AgrokartLogo = ({ 
   width = 200, 
   height = 60, 
   variant = 'full', // 'full', 'icon', 'text'
@@ -73,7 +73,7 @@ const AgriNetLogo = ({
             textShadow: color === 'white' ? 'none' : '1px 1px 2px rgba(0,0,0,0.1)'
           }}
         >
-          Agri
+          Agro
         </Typography>
         <Typography
           sx={{
@@ -85,7 +85,7 @@ const AgriNetLogo = ({
             textShadow: color === 'white' ? 'none' : '1px 1px 2px rgba(0,0,0,0.1)'
           }}
         >
-          Net
+          kart
         </Typography>
       </Box>
     </Box>
@@ -128,7 +128,7 @@ const AgriNetLogo = ({
             letterSpacing: '1px'
           }}
         >
-          Agri
+          Agro
         </Typography>
         <Typography
           sx={{
@@ -139,7 +139,7 @@ const AgriNetLogo = ({
             letterSpacing: '1px'
           }}
         >
-          Net
+          kart
         </Typography>
       </Box>
     </Box>
@@ -173,4 +173,4 @@ const AgriNetLogo = ({
   );
 };
 
-export default AgriNetLogo;
+export default AgrokartLogo;

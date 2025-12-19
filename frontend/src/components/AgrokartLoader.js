@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, Fade, CircularProgress } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import AgriNetLogo from './AgriNetLogo';
+import AgrokartLogo from './AgrokartLogo';
 
-const AgriNetLoader = ({ 
+const AgrokartLoader = ({ 
   message = 'Loading...', 
   size = 'medium',
   variant = 'full', // 'full', 'inline', 'overlay'
@@ -99,8 +99,8 @@ const AgriNetLoader = ({
           justifyContent: 'center',
         }}
       >
-        {/* AgriNet Logo */}
-        <AgriNetLogo 
+        {/* Agrokart Logo */}
+        <AgrokartLogo 
           width={config.logoSize} 
           height={config.logoSize * 0.6} 
           variant="full" 
@@ -349,7 +349,7 @@ const AgriNetLoader = ({
         {showProgress && <ProgressWave />}
         <LoadingDots />
 
-        {/* AgriNet branding */}
+        {/* Agrokart branding */}
         <Typography
           variant="caption"
           sx={{
@@ -365,11 +365,11 @@ const AgriNetLoader = ({
             }
           }}
         >
-          🌾 AgriNet - Connecting Agriculture • v1.0.0
+          🌾 Agrokart - Connecting Agriculture • v1.0.0
         </Typography>
       </Box>
     </Fade>
   );
 };
 
-export default AgriNetLoader;
+export default AgrokartLoader;

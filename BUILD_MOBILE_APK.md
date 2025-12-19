@@ -1,6 +1,6 @@
-# AgriNet Mobile App - Build Instructions
+# Agrokart Mobile App - Build Instructions
 
-This guide explains how to build the AgriNet mobile application as an APK for Android devices.
+This guide explains how to build the Agrokart mobile application as an APK for Android devices.
 
 ## Prerequisites
 
@@ -94,7 +94,7 @@ The generated APK will be located at:
 - Native status bar styling
 - Safe area handling
 
-✅ **AgriNet Features:**
+✅ **Agrokart Features:**
 - Customer marketplace
 - Vendor dashboard
 - Delivery partner interface

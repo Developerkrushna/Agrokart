@@ -326,7 +326,7 @@ export const NotificationProvider = ({ children }) => {
         <DialogContent>
           <Typography variant="body1" paragraph>
             Stay updated with your orders, deliveries, and special offers! 
-            Enable notifications to receive important updates about your AgriNet experience.
+            Enable notifications to receive important updates about your Agrokart experience.
           </Typography>
           
           <Box sx={{ mt: 2 }}>

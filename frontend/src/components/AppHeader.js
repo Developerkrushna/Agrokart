@@ -98,9 +98,9 @@ const AppHeader = () => {
           <Toolbar sx={{ px: { xs: 1, sm: 2 }, minHeight: 64 }}>
             {/* Logo */}
             <Box sx={{ display: 'flex', alignItems: 'center', flex: '0 0 auto', mr: 2, cursor: 'pointer' }} onClick={() => navigate('/') }>
-              <img src="/logo192.png" alt="AgriNet" style={{ height: 40, marginRight: 8 }} />
+              <img src="/logo192.png" alt="Agrokart" style={{ height: 40, marginRight: 8 }} />
               <Typography variant="h6" sx={{ fontWeight: 800, letterSpacing: 1, color: 'white', fontSize: '1.5rem' }}>
-                AgriNet
+                Agrokart
               </Typography>
             </Box>
             {/* Search Bar */}

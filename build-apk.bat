@@ -1,5 +1,5 @@
 @echo off
-echo 🚀 Building AgriNet Android APK...
+echo 🚀 Building Agrokart Android APK...
 echo.
 
 cd frontend
@@ -44,7 +44,7 @@ echo 📋 Installation Instructions:
 echo 1. Enable "Unknown Sources" in Android Settings
 echo 2. Transfer the APK to your Android device
 echo 3. Install the APK
-echo 4. Launch AgriNet app
+echo 4. Launch Agrokart app
 echo.
-echo ✅ Your AgriNet mobile app is ready!
+echo ✅ Your Agrokart mobile app is ready!
 pause

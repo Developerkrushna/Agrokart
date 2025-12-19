@@ -22,7 +22,7 @@ import {
   TrendingUp as EarningsIcon
 } from '@mui/icons-material';
 import { useAuth } from '../context/AuthContext';
-import AgriNetLogo from '../components/AgriNetLogo';
+import AgrokartLogo from '../components/AgrokartLogo';
 
 const VendorLoginPage = () => {
   const navigate = useNavigate();
@@ -94,7 +94,7 @@ const VendorLoginPage = () => {
             <Paper elevation={6} sx={{ p: 4, borderRadius: 3 }}>
               {/* Logo and Header */}
               <Box sx={{ textAlign: 'center', mb: 4 }}>
-                <AgriNetLogo size="medium" />
+                <AgrokartLogo size="medium" />
                 <Typography
                   variant="h4"
                   component="h1"
@@ -170,7 +170,7 @@ const VendorLoginPage = () => {
 
                 <Divider sx={{ my: 3 }}>
                   <Typography variant="body2" color="text.secondary">
-                    New to AgriNet? Register your business to start selling agricultural products
+                    New to Agrokart? Register your business to start selling agricultural products
                   </Typography>
                 </Divider>
 
@@ -223,7 +223,7 @@ const VendorLoginPage = () => {
               </Typography>
               
               <Typography variant="h6" color="text.secondary" sx={{ mb: 4 }}>
-                Join thousands of vendors selling agricultural products on AgriNet
+                Join thousands of vendors selling agricultural products on Agrokart
               </Typography>
 
               <Grid container spacing={3}>
@@ -272,7 +272,7 @@ const VendorLoginPage = () => {
 
               <Box sx={{ mt: 4, p: 3, backgroundColor: '#f8f9fa', borderRadius: 2 }}>
                 <Typography variant="h6" fontWeight="bold" gutterBottom sx={{ color: '#FF9800' }}>
-                  🌾 Why Choose AgriNet?
+                  🌾 Why Choose Agrokart?
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   • Reach thousands of farmers and agricultural businesses<br/>

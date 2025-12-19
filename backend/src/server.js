@@ -20,7 +20,7 @@ app.use(express.static('public'));
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'OK',
-    message: 'AgriNet API is running',
+    message: 'Agrokart API is running',
     timestamp: new Date().toISOString()
   });
 });

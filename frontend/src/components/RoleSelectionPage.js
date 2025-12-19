@@ -20,7 +20,7 @@ import {
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import AgriNetLogo from './AgriNetLogo';
+import AgrokartLogo from './AgrokartLogo';
 
 const RoleSelectionPage = () => {
   const theme = useTheme();
@@ -92,7 +92,7 @@ const RoleSelectionPage = () => {
             <Box sx={{ textAlign: 'center', mb: 6 }}>
               <Zoom in={showAnimation} timeout={1200}>
                 <Box sx={{ mb: 3 }}>
-                  <AgriNetLogo size="large" />
+                  <AgrokartLogo size="large" />
                 </Box>
               </Zoom>
               
@@ -108,7 +108,7 @@ const RoleSelectionPage = () => {
                   textAlign: 'center'
                 }}
               >
-                Welcome to AgriNet
+                Welcome to Agrokart
               </Typography>
               
               <Typography
@@ -271,7 +271,7 @@ const RoleSelectionPage = () => {
             {/* Footer */}
             <Box sx={{ textAlign: 'center', mt: 6 }}>
               <Typography variant="body2" color="text.secondary">
-                © 2025 AgriNet. All rights reserved.
+                © 2025 Agrokart. All rights reserved.
               </Typography>
               <Typography variant="caption" color="text.secondary" display="block" sx={{ mt: 1 }}>
                 Connecting farmers, vendors, and delivery partners across India

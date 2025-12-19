@@ -31,7 +31,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import AgriNetLogo from '../components/AgriNetLogo';
+import AgrokartLogo from '../components/AgrokartLogo';
 import { auth } from '../config/firebase';
 
 const UnifiedAuthPage = () => {
@@ -364,7 +364,7 @@ const UnifiedAuthPage = () => {
             <Box sx={{ textAlign: 'center', mb: 4 }}>
               <Zoom in timeout={1200}>
                 <Box sx={{ mb: 2 }}>
-                  <AgriNetLogo size="large" />
+                  <AgrokartLogo size="large" />
                 </Box>
               </Zoom>
               
@@ -379,7 +379,7 @@ const UnifiedAuthPage = () => {
                   WebkitTextFillColor: 'transparent'
                 }}
               >
-                Welcome to AgriNet
+                Welcome to Agrokart
               </Typography>
               
               <Typography variant="h6" color="text.secondary">
@@ -395,7 +395,7 @@ const UnifiedAuthPage = () => {
                     Choose Your Role
                   </Typography>
                   <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                    Select how you want to use AgriNet
+                    Select how you want to use Agrokart
                   </Typography>
 
                   <Grid container spacing={2}>
@@ -686,7 +686,7 @@ const UnifiedAuthPage = () => {
             {/* Footer */}
             <Box sx={{ textAlign: 'center', mt: 4 }}>
               <Typography variant="body2" color="text.secondary">
-                © 2025 AgriNet. All rights reserved.
+                © 2025 Agrokart. All rights reserved.
               </Typography>
               <Typography variant="caption" color="text.secondary" display="block" sx={{ mt: 1 }}>
                 Connecting farmers, vendors, and delivery partners across India

@@ -1,6 +1,6 @@
-# 🌾 AgriNet Web Scraping System
+# 🌾 Agrokart Web Scraping System
 
-A comprehensive web scraping solution for agricultural products to populate your AgriNet mobile app with real fertilizer, seed, and farming supply data.
+A comprehensive web scraping solution for agricultural products to populate your Agrokart mobile app with real fertilizer, seed, and farming supply data.
 
 ## 📋 Features
 
@@ -94,9 +94,9 @@ scraper.close()
 ### Data Integration (`data_integrator.py`)
 
 ```python
-from data_integrator import AgriNetDataIntegrator
+from data_integrator import AgrokartDataIntegrator
 
-integrator = AgriNetDataIntegrator("../database.db")
+integrator = AgrokartDataIntegrator("../database.db")
 result = integrator.integrate_scraped_data("products.json")
 integrator.export_to_json("frontend_products.json")
 ```
@@ -226,9 +226,9 @@ cat scheduler_status.json
 ### Database Statistics
 
 ```python
-from data_integrator import AgriNetDataIntegrator
+from data_integrator import AgrokartDataIntegrator
 
-integrator = AgriNetDataIntegrator()
+integrator = AgrokartDataIntegrator()
 stats = integrator.get_database_stats()
 print(stats)  # {'products': 150, 'categories': 5, 'brands': 12}
 ```

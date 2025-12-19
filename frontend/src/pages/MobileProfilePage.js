@@ -66,7 +66,7 @@ const MobileProfilePage = () => {
     },
     {
       icon: <AboutIcon />,
-      title: 'About AgriNet',
+      title: 'About Agrokart',
       subtitle: 'Learn more about our app',
       action: () => navigate('/about')
     }
@@ -224,7 +224,7 @@ const MobileProfilePage = () => {
         <Card sx={{ borderRadius: 2, boxShadow: 1, bgcolor: '#E8F5E8' }}>
           <CardContent sx={{ p: 2, textAlign: 'center' }}>
             <Typography variant="body2" sx={{ color: '#4CAF50', fontWeight: 500, mb: 1 }}>
-              AgriNet v1.0.0
+              Agrokart v1.0.0
             </Typography>
             <Typography variant="caption" sx={{ color: '#666' }}>
               Premium fertilizers and farming supplies delivered to your farm

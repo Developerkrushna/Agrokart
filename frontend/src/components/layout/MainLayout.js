@@ -47,7 +47,7 @@ import { useCart } from '../../context/CartContext';
 import { useAuth } from '../../context/AuthContext';
 import { useLanguage } from '../../context/LanguageContext';
 import LanguageSelector from '../LanguageSelector';
-import AgriNetLogo from '../AgriNetLogo';
+import AgrokartLogo from '../AgrokartLogo';
 
 const categories = [
   { name: 'Electronics', icon: ElectronicsIcon, color: 'white' },
@@ -229,7 +229,7 @@ const MainLayout = ({ children }) => {
           <Toolbar sx={{ justifyContent: 'space-between', minHeight: 64, px: { xs: 1, sm: 2 } }}>
             {/* AgiNet Logo */}
             <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={() => navigate('/home')}>
-              <AgriNetLogo width={180} height={50} variant="full" color="white" />
+              <AgrokartLogo width={180} height={50} variant="full" color="white" />
             </Box>
 
             {/* Home Button */}

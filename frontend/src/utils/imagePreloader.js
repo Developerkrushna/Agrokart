@@ -1,5 +1,5 @@
 /**
- * Image Preloader Utility for AgriNet
+ * Image Preloader Utility for Agrokart
  * Preloads critical agricultural product images for smooth user experience
  */
 

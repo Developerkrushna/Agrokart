@@ -1,21 +1,21 @@
-# 🎉 AgriNet Android APK Build Complete!
+# 🎉 Agrokart Android APK Build Complete!
 
 ## ✅ Build Status: SUCCESS
 
-Your AgriNet mobile application has been successfully built as Android APK files.
+Your Agrokart mobile application has been successfully built as Android APK files.
 
 ## 📱 APK Details
 
 ### **Debug APK (Development/Testing)**
 - **File**: `app-debug.apk`
 - **Size**: ~8.16 MB
-- **Location**: `c:\Users\ASUS\OneDrive\Desktop\AgriNet\frontend\android\app\build\outputs\apk\debug\app-debug.apk`
+- **Location**: `c:\Users\ASUS\OneDrive\Desktop\Agrokart\frontend\android\app\build\outputs\apk\debug\app-debug.apk`
 - **Use**: Testing, development, side-loading
 - **Status**: ✅ Ready for installation
 
 ### **Release APK (Production)**
 - **Status**: 🔄 Building (may take a few more minutes)
-- **Location**: `c:\Users\ASUS\OneDrive\Desktop\AgriNet\frontend\android\app\build\outputs\apk\release\app-release.apk`
+- **Location**: `c:\Users\ASUS\OneDrive\Desktop\Agrokart\frontend\android\app\build\outputs\apk\release\app-release.apk`
 - **Use**: Google Play Store distribution, production deployment
 
 ## 🚀 What You Can Do Now
@@ -28,7 +28,7 @@ Your AgriNet mobile application has been successfully built as Android APK files
 
 ### **2. Test the App**
 - ✅ All mobile features (camera, GPS, notifications)
-- ✅ Complete AgriNet functionality
+- ✅ Complete Agrokart functionality
 - ✅ Role-based interfaces (Customer/Vendor/Delivery)
 - ✅ Native Android experience
 
@@ -81,7 +81,7 @@ Your AgriNet mobile application has been successfully built as Android APK files
 2. **Transfer APK** to your device
    - Copy `app-debug.apk` to phone storage
 3. **Install** by tapping the APK file
-4. **Open** AgriNet from app drawer
+4. **Open** Agrokart from app drawer
 
 ### **For Production (Release APK):**
 - Upload to Google Play Console
@@ -109,7 +109,7 @@ Your AgriNet mobile application has been successfully built as Android APK files
 
 ## 🎊 Congratulations!
 
-Your AgriNet application is now a **complete, production-ready Android app** with:
+Your Agrokart application is now a **complete, production-ready Android app** with:
 - ✅ All web features preserved and optimized
 - ✅ Native mobile capabilities
 - ✅ Professional mobile user experience

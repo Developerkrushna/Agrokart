@@ -132,7 +132,7 @@ const MobileNavigation = ({ user, onLogout, cartCount = 0, notificationCount = 0
       >
         <Toolbar>
           <Typography variant="h6" sx={{ fontWeight: 800, letterSpacing: 1, color: 'white', fontSize: '1.5rem' }}>
-            AgriNet
+            Agrokart
           </Typography>
           
           {/* Notifications */}

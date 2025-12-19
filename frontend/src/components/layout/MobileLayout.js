@@ -33,7 +33,7 @@ import {
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 import { useAuth } from '../../context/AuthContext';
-import AgriNetLogo from '../AgriNetLogo';
+import AgrokartLogo from '../AgrokartLogo';
 
 const MobileLayout = ({ children }) => {
   const theme = useTheme();
@@ -140,7 +140,7 @@ const MobileLayout = ({ children }) => {
               }}
               onClick={() => navigate('/home')}
             >
-              <AgriNetLogo width={100} height={28} variant="full" color="white" />
+              <AgrokartLogo width={100} height={28} variant="full" color="white" />
             </Box>
           </Box>
 

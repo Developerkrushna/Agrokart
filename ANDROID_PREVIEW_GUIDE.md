@@ -1,4 +1,4 @@
-# AgriNet Android App Preview Guide
+# Agrokart Android App Preview Guide
 
 ## 🎯 Multiple Preview Options Available
 
@@ -33,7 +33,7 @@
 
 ### **Option 2: Android Emulator**
 ```bash
-cd c:\Users\ASUS\OneDrive\Desktop\AgriNet\frontend
+cd c:\Users\ASUS\OneDrive\Desktop\Agrokart\frontend
 npx cap run android --target=Medium_Phone_API_36.0
 ```
 
@@ -42,7 +42,7 @@ npx cap run android --target=Medium_Phone_API_36.0
 # 1. Connect Android device via USB
 # 2. Enable Developer Options & USB Debugging
 # 3. Run command:
-cd c:\Users\ASUS\OneDrive\Desktop\AgriNet\frontend
+cd c:\Users\ASUS\OneDrive\Desktop\Agrokart\frontend
 npx cap run android
 ```
 
@@ -65,7 +65,7 @@ npx cap run android
 - ✅ GPS location services
 - ✅ Push notifications
 - ✅ Haptic feedback
-- ✅ Native status bar (AgriNet green)
+- ✅ Native status bar (Agrokart green)
 - ✅ Back button handling
 - ✅ App lifecycle management
 - ✅ File system access
@@ -101,7 +101,7 @@ npx cap run android
 
 ### **Start Android Emulator Preview:**
 ```bash
-cd c:\Users\ASUS\OneDrive\Desktop\AgriNet\frontend
+cd c:\Users\ASUS\OneDrive\Desktop\Agrokart\frontend
 npx cap run android
 ```
 
@@ -175,4 +175,4 @@ npx cap open android
 2. **Full Android Experience**: Run the emulator command
 3. **Real Device Testing**: Connect your Android device
 
-Your AgriNet mobile app includes all the features of the web version optimized for mobile devices with native Android capabilities!
+Your Agrokart mobile app includes all the features of the web version optimized for mobile devices with native Android capabilities!

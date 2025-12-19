@@ -115,7 +115,7 @@ const RegisterPage = () => {
             Create Account
           </Typography>
           <Typography variant="body1" gutterBottom align="center" color="text.secondary">
-            Sign up to get started with AgriNet
+            Sign up to get started with Agrokart
           </Typography>
 
           {error && (

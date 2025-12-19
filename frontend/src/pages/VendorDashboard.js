@@ -101,7 +101,7 @@ import {
 } from '@mui/icons-material';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import AgriNetLoader from '../components/AgriNetLoader';
+import AgrokartLoader from '../components/AgrokartLoader';
 
 // Add futuristic animations
 const float = keyframes`
@@ -392,7 +392,7 @@ const VendorDashboard = () => {
 
   // Show loading screen on initial load
   if (pageLoading) {
-    return <AgriNetLoader message="Loading Vendor Dashboard..." variant="full" />;
+    return <AgrokartLoader message="Loading Vendor Dashboard..." variant="full" />;
   }
 
   return (

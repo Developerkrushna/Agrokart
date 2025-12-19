@@ -57,7 +57,7 @@ const testimonials = [
     id: 1,
     name: "Rajesh Kumar",
     location: "Punjab",
-    text: "AgriNet has transformed my farming. Quality fertilizers delivered on time!",
+    text: "Agrokart has transformed my farming. Quality fertilizers delivered on time!",
     rating: 5,
     avatar: "https://randomuser.me/api/portraits/men/32.jpg"
   },
@@ -73,7 +73,7 @@ const testimonials = [
     id: 3,
     name: "Suresh Patel",
     location: "Gujarat",
-    text: "Fast delivery and expert advice. Highly recommend AgriNet!",
+    text: "Fast delivery and expert advice. Highly recommend Agrokart!",
     rating: 5,
     avatar: "https://randomuser.me/api/portraits/men/68.jpg"
   }
@@ -118,7 +118,7 @@ const HomePage = () => {
           alignItems: 'center',
           justifyContent: 'center',
           overflow: 'hidden'
-        }}
+        }}-
       >
         {/* Animated Background Elements */}
         <Box
@@ -440,7 +440,7 @@ const HomePage = () => {
         </Container>
       </Box>
 
-      {/* Modern Features Section - Why Choose AgriNet? */}
+      {/* Modern Features Section - Why Choose Agrokart? */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <Fade in={isVisible} timeout={1500}>
           <Box sx={{ textAlign: 'center', mb: 6 }}>
@@ -455,7 +455,7 @@ const HomePage = () => {
                 backgroundClip: 'text'
               }}
             >
-              Why Choose AgriNet?
+              Why Choose Agrokart?
             </Typography>
             <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 600, mx: 'auto' }}>
               We're revolutionizing agriculture with technology, quality, and trust
@@ -600,7 +600,7 @@ const HomePage = () => {
             What Our Farmers Say
           </Typography>
           <Typography variant="h6" color="text.secondary">
-            Real stories from real farmers who trust AgriNet
+            Real stories from real farmers who trust Agrokart
           </Typography>
         </Box>
 
@@ -670,7 +670,7 @@ const HomePage = () => {
             Ready to Transform Your Farming?
           </Typography>
           <Typography variant="h6" sx={{ mb: 4, opacity: 0.9 }}>
-            Join thousands of farmers who trust AgriNet for their fertilizer needs
+            Join thousands of farmers who trust Agrokart for their fertilizer needs
           </Typography>
 
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ justifyContent: 'center' }}>
