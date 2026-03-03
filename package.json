@@ -15,7 +15,7 @@
     "@capacitor/status-bar": "^7.0.3",
     "@capacitor/toast": "^7.0.2",
     "lottie-react": "^2.4.1",
-    "multer": "^2.0.2",
+    "multer": "^2.1.0",
     "swiper": "^11.2.8"
   }
 }
