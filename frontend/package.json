@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@capacitor/android": "^7.4.2",
-    "@capacitor/cli": "^7.4.2",
+    "@capacitor/cli": "^7.6.0",
     "@capacitor/core": "^7.4.2",
     "@capacitor/splash-screen": "^7.0.3",
     "@emotion/react": "^11.11.3",
